@@ -2,24 +2,60 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> recibe noticias </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="recibenoticias\miau.ico" href="miau.ico">
+  <title> Recibe Noticias </title>
+
 </head>
+
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    background-image: url('miau.gif');
+    /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+    padding: 370px;
+    height: 100%;
+  }
+
+  text.center {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+  }
+</style>
+</head>
+
 <body>
-    <div class="col-md-6 mt-4 card">
-      <form class="card-body" action="/login-action" method="post">
-        <h1 class="card-title"> michinoticias </h1>
-        <div class="form-group">
-            <input name="name" type="text" class="form-control" placeholder="correo-electronico">
-          </div>
-          <div id="lower">
-            <input type="checkbox" /><label class="check" </label>
-            <!-- Submit Button -->
-        </div>
-          <input type="submit" class="btn btn-primary">  
-      </form>
+  <header>
+    <h1>Recibe </h1>
+
+  </header <div class="col-md-6 mt-4 card">
+  <form class="card-body" action="/login-action" method="post">
+    <h1 class="card-title"> Michinoticias de la semana</h1>
     
+    <div class="form-group">
+      <input name="email" type="text" class="form-control" placeholder="correo-electronico">
+    </div>
+    <div id="lower">
+      <input type="checkbox" id="suscribete" />
+      <label class="check" for="suscribete">Suscribete </label>
+      <!-- huellita aqui Button -->
+    </div>
+    <input type="submit" class="btn btn-primary" value="enviar">
+  </form>
+  </div>
+
 </body>
+<footer>
+  <!creamos una newletter parecido al login que hiciste en Nutrikal>
+    <p><b> © 2025 Razas Gatunas</b> </p>
+</footer>
+<VOLVER A INICIO>
 
 </html>
