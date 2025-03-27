@@ -1,10 +1,3 @@
-.{
-    ¨ {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 header {
     background-color: #0eb459;
@@ -12,7 +5,57 @@ header {
     padding: 30px;
     font-size: 20px;
 }
-.body {
+
+body {
+    background-image: url('fondimeow.png');
+    /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color: #8091b4;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a :hover {
+    color: rgb(206, 191, 201);
+    text-decoration: underline;
+    margin: 0 10px;
+}
+.content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
+
+.list-container {
+    width: 15%;
+    padding: 30px;
+    padding-right: 0%;
+}
+
+.image-grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 4, 2%;
+    grid-template-columns: 3, 3%;
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-grid img {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+/*.body {
     background-color: rgba(64, 148, 173, 0.863);
     border: solid 1px rgb(10, 119, 119);
     overflow: hidden;
@@ -28,6 +71,8 @@ header {
 ol{
     width: 300px;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 ol li {
@@ -37,7 +82,7 @@ ol li {
     background-color: rgb(63, 139, 110);
     cursor: pointer;
     position: relative;
-    transition: all.4s;
+    transition: all 0.4s;
     z-index: 10;
 }
 
@@ -49,7 +94,7 @@ ol li::before {
     width: 5px;
     height: 100%;
     background-color: rgb(8, 228, 228);
-    transition: all.4s;
+    transition: all 0.4s;
     z-index: -1;
 }
 
@@ -72,4 +117,4 @@ ol li:nth-child(3)::before{
 ol li:hover{
     transform:translateX(20px);
 }
-}
+*/
