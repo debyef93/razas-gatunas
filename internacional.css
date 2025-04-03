@@ -1,0 +1,196 @@
+header {
+    background-color: #b4610e7a;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    height: 100px;
+    margin:0;
+    padding:0;
+    background-size: absolute;
+}
+
+body {
+    /*background-image: url('fondimeow.png');
+    Cambia 'fondo.jpg' por el nombre de tu imagen */
+    background-size: cover;
+    background-position:center;
+    background-repeat: none;
+    height:100%;
+    margin: 20;  
+    padding: 100;
+    display:flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #8091b4;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    list-style-type: none; /*quitar puntos*/
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(203, 31, 146);
+    text-decoration: underline;
+    margin: 10px 0;
+    list-style-type: none;/*quitar puntos*/
+    padding: 10px;
+    text-decoration: none;
+}
+.menu {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    background-color: aquamarine;
+}
+
+.menu li {
+    display: flexbox; /* Hace que los elementos de la lista se alineen horizontalmente */
+    margin-right: 15px; /* Espaciado entre los elementos */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Cambia el color del texto del enlace */
+    font-weight: bold; /* Hace el texto más destacado */
+    transition-duration: 0s5s; /* Añade una transición suave al color */
+}
+
+.submenu {
+    list-style-type: none; /* Quita los puntos de las sublistas */
+    padding: 0;
+    margin: 0;
+}
+
+
+.content {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    margin: 35px 20 20 10; 
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    padding: 0;
+    gap:30%;
+    border-radius: 20px;
+    grid-row-gap: 20px;
+    object-fit: cover;
+}
+.scroll-conatiner{
+    scroll-behavior: smooth;
+}
+
+.grid-container {
+    width: 80%;
+    padding: 30%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*modifica el tamaño de la imagen*/
+    gap: 30%;
+    margin: 25px 0;
+    align-items: center;
+    overflow-inline: hidden;
+    object-fit: cover;
+    display: grid;
+    grid-row-gap: 30px;
+    height: 100vh;
+
+}
+.grid-item{
+    border: transparent;
+    overflow: visible;
+    margin: 25px;
+    font-family: 'helvetica', sans-serif;
+    display: -webkit-box;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border-radius:10px;
+    object-fit: cover;
+    margin: 25px 10 10 10;
+    height: 80vh;
+    padding: 15px;
+    width: 100%;
+}
+.layout{
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    padding: 0;
+    gap:20px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.image-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(30px, 1fr)); /*modifica el tamaño de la imagen*/
+    gap: 20px;
+    padding: 20px;
+    object-fit: cover;
+    margin: 25px 10 10 10;
+    padding: 15px;
+}
+.image-grid :hover > img:not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.5;
+
+}
+.grid-item a{
+    padding: 0px;
+    color: rgba(232, 125, 10, 0.703);
+    text-decoration: none;
+    font-size: 26px !important;
+    font-family: 'helvetica', sans-serif;
+    font-weight: bold;
+}
+   
+.grid-item a:hover{
+       text-decoration: underline;
+       border-radius: 20px;
+        gap:20%;
+       padding: 20px;
+       transform: scale(0.9);
+   }
+.iframe{
+    width: 500%;
+    height: 500%;
+    border-radius: 40px;
+    margin: 25px 0 0 0;
+    padding: 15px;
+    object-fit: cover;
+   }
+   
+   footer{
+    background-color: #b4610e7a;
+    text-align: center;
+    background-size: absolute;
+    background-position: absolute;
+    margin-top: 10;
+    height: 100px;
+    padding:100px;
+    font-size: 20px;
+    margin-top: auto;
+    scroll-padding: 0;
+    display: flex;
+}
+footer p {
+    margin: 20px 0;
+    padding: 20px 0;
+    color: #a81b1b00;
+    font-size: 16px;
+    font-family: 'helvetica', sans-serif;
+    text-align: center;
+}
